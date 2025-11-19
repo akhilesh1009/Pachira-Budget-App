@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="?android:attr/selectableItemBackground"
+    android:paddingHorizontal="4dp">
+
+    <ImageView
+        android:id="@+id/ivCategoryIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="6dp"
+        android:src="@drawable/ic_category_default"
+        android:scaleType="centerInside" />
+
+    <!-- Text (weighted to push radio to right) -->
+    <TextView
+        android:id="@+id/tvCategoryName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Category Name"
+        android:textSize="16sp"
+        android:textColor="@color/text_primary"
+        android:gravity="start|center_vertical"
+        android:layout_marginStart="2dp" />
+
+    <!-- Radio Button on the far right with more margin -->
+    <RadioButton
+        android:id="@+id/rbCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/custom_radio_button"
+        android:background="@null"
+        android:buttonTint="@null"
+        android:buttonTintMode="multiply"
+        android:theme="@null"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="2dp"/>
+
+</LinearLayout>

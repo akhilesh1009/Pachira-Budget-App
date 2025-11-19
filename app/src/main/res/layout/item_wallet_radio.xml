@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:gravity="center_vertical"
+    android:background="?android:attr/selectableItemBackground"
+    android:minHeight="56dp">
+
+    <ImageView
+        android:id="@+id/ivWalletIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="6dp"
+        android:src="@drawable/ic_wallet_default"
+        android:scaleType="centerInside"
+        android:contentDescription="Wallet Icon" />
+
+    <TextView
+        android:id="@+id/tvWalletName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Wallet Name"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:gravity="start|center_vertical"
+        android:layout_marginStart="2dp"/>
+
+    <RadioButton
+        android:id="@+id/rbWallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/custom_radio_button"
+        android:background="@null"
+        android:buttonTint="@null"
+        android:buttonTintMode="multiply"
+        android:theme="@null"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="2dp"/>
+
+</LinearLayout>
+

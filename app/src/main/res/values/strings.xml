@@ -1,0 +1,220 @@
+<resources>
+    <!-- App Information -->
+    <string name="app_name">Pachira</string>
+    <string name="application_Name">PACHIRA</string>
+    <string name="tag_line">Grow your Wealth, Leaf by Leaf</string>
+    <string name="PachiraLogo">Pachira Logo</string>
+    <string name="Welcome">WELCOME</string>
+
+    <!-- Navigation -->
+    <string name="home">Home</string>
+    <string name="budgets">Budgets</string>
+    <string name="trends">Trends</string>
+    <string name="wallets">Wallets</string>
+    <string name="profile">Profile</string>
+    <string name="back">Back</string>
+
+
+    <!-- Navigation -->
+    <string name="statistics">Statistics</string>
+    <string name="more">More</string>
+
+    <!-- Wallet Strings -->
+    <string name="wallet">Wallet</string>
+    <string name="add_wallet">Add Wallet</string>
+    <string name="wallet_name">Wallet Name</string>
+    <string name="initial_balance">Initial Balance</string>
+    <string name="wallet_type">Wallet Type</string>
+    <string name="wallet_color">Wallet Color</string>
+    <string name="create_wallet">CREATE WALLET</string>
+    <string name="cash">Cash</string>
+    <string name="bank">Bank</string>
+    <string name="credit">Credit</string>
+    <string name="ewallet">E-Wallet</string>
+
+    <!-- Messages -->
+    <string name="no_wallets_yet">No Wallets Yet</string>
+    <string name="add_wallet_description">Add a wallet to start tracking your finances</string>
+
+    <!-- Validation Messages -->
+    <string name="wallet_name_required">Wallet name is required</string>
+    <string name="invalid_amount">Invalid amount</string>
+    <string name="wallet_created_success">Wallet created successfully</string>
+    <string name="wallet_creation_failed">Failed to create wallet</string>
+
+    <!-- Common -->
+    <string name="close">Close</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit">Edit</string>
+
+
+    <!-- Authentication -->
+    <string name="Login">LOGIN</string>
+    <string name="Register">SIGN UP</string>
+    <string name="login_to_your_account">Login to your account</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="don_t_have_an_account_register">Don\'t have an account? Sign Up</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="logout">Logout</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="First_Name">First Name</string>
+    <string name="category_icon">Category icon</string>
+
+    <!-- Dashboard -->
+    <string name="Dashboard">DASHBOARD</string>
+    <string name="Available_Balance">Available Balance</string>
+    <string name="transactions">TRANSACTIONS</string>
+    <string name="forgotPassword">Forgot Password?</string>
+
+    <!-- Income & Expense -->
+    <string name="Income">Income</string>
+    <string name="Expense">Expense</string>
+    <string name="Add_Income">Add Income</string>
+    <string name="Add_Expense">Add Expense</string>
+    <string name="add_income">ADD INCOME</string>
+    <string name="add_expense">ADD EXPENSE</string>
+    <string name="Income_Trend">Income Trend</string>
+    <string name="Expense_Trend">Expense Trend</string>
+
+    <!-- Transaction Details -->
+    <string name="amount">Amount</string>
+    <string name="description">Description</string>
+    <string name="description_hint">Enter description</string>
+    <string name="category">Category</string>
+    <string name="date">Date</string>
+    <string name="save">Save</string>
+    <string name="receipt_image">Receipt Image</string>
+
+    <!-- Categories -->
+    <string name="category_name">Category Name</string>
+    <string name="color_hex_code">Color Hex Code</string>
+    <string name="icon_name">Icon Name</string>
+
+    <!-- Date Navigation -->
+    <string name="previous_month">Previous Month</string>
+    <string name="next_month">Next Month</string>
+
+
+    <string name="remember">Remember Me</string>
+    <string name="ForgotPassword">FORGOT PASSWORD?</string>
+    <string name="Password_exp">Please enter your email address and we’ll send you a link to reset your password. </string>
+    <string name="request_link">RESET PASSWORD</string>
+    <string name="back_login">Back to Login</string>
+    <string name="lock_description">Open Lock</string>
+    <string name="back_btn">Back button</string>
+    <string name="Category_Spending">Category Spending</string>
+    <string name="add_category">Add Category</string>
+    <string name="currency_ZAR">ZAR</string>
+    <string name="color_selected">color selected</string>
+    <string name="F">F</string>
+    <string name="Food">Food</string>
+    <string name="R200Amount">R200.00</string>
+    <string name="eighty_percent">80%</string>
+    <string name="limit">Limit: R250.00</string>
+    <string name="Add_Funds">ADD FUNDS</string>
+    <string name="Transaction_Details">Transaction Details</string>
+    <string name="Close">Close</string>
+    <string name="Type_Label">Type:</string>
+    <string name="AmountLabel">Amount:</string>
+    <string name="CategoryLabel">Category:</string>
+    <string name="DateLabel">Date:</string>
+    <string name="DatePlaceHolder">January 1, 2023</string>
+    <string name="DescriptionLabel">Description:</string>
+    <string name="DescriptionPlaceholder">Grocery shopping at Pick n Pay</string>
+    <string name="CategoryNameLabel">Enter category name</string>
+    <string name="CategoryNametv">Category Name</string>
+    <string name="tvNewCategory">Create New Category</string>
+    <string name="BudgetLimitLabel">Budget Limit</string>
+    <string name="EnterBudgetLimitLabel">Enter budget limit (e.g., 2000)</string>
+    <string name="ColorLabel">Color</string>
+    <string name="IconPlaceHolder">Icon</string>
+    <string name="CreateCategoryLabel">Create Category</string>
+    <string name="CreateCategory">CREATE CATEGORY</string>
+    <string name="GoalDetailsLabel">Goal Details</string>
+    <string name="AvailableBalancePlaceholder">Available Balance: R 0.00</string>
+    <string name="AmountAddLabel">Amount to Add</string>
+    <string name="AddSavingsGoalLabel">Add Savings Goal</string>
+    <string name="GoalNamePlaceholder">Goal Name</string>
+    <string name="TargetAmountLabel">Target Amount</string>
+    <string name="InitialAmountPlaceholder">Initial Amount (optional)</string>
+    <string name="CreateGoalLabel">CREATE GOAL</string>
+    <string name="Wallets">Wallets</string>
+    <string name="ComingSoon">Coming Soon</string>
+    <string name="WalletsFeatureLabel">Multiple wallets feature will be available in a future update</string>
+    <string name="TrendsFeatureLabel">Trends and analytics feature will be available in a future update</string>
+    <string name="FilterByDateLabel">Filter by Date</string>
+    <string name="StartDateLabel">Start Date</string>
+    <string name="EndDateLabel">End Date</string>
+    <string name="ApplyFilterLabel">APPLY FILTER</string>
+    <string name="NoTransactionsLabel">No transactions found</string>
+    <string name="TransactionsHelp">Try adjusting your filter or add new transactions</string>
+    <string name="ContinueFacebook">Continue with Facebook</string>
+    <string name="ContinueGoogle">Continue with Google</string>
+    <string name="ContinueApple">Continue with Apple</string>
+    <string name="EmailExample">user@example.com</string>
+    <string name="UserJoinDatePlaceholder">Member since: January 1, 2023</string>
+    <string name="SavingsGoalLabel">Savings Goals</string>
+    <string name="NoSavingsGoal">No savings goals yet</string>
+    <string name="AddGoalText">Add a goal to start saving for something special</string>
+    <string name="BudgetGoal">Budget Goal</string>
+    <string name="DatePickerPlaceholder">February - 2023</string>
+    <string name="suggestAmount">0</string>
+    <string name="splash">splash image\n</string>
+    <string name="confirm_Logout">Are you sure you want to logout?</string>
+    <string name="logout_no">No</string>
+    <string name="logout_yes">Yes</string>
+    <string name="delete">Delete Account</string>
+    <string name="confirm_Delete">Are you sure you want to delete your account? This action cannot be undone.</string>
+    <string name="NoExpenseLogged">No expenses logged yet</string>
+    <string name="current_month">April - 2025</string>
+    <string name="Monday">Mo</string>
+    <string name="Tuesday">Tu</string>
+    <string name="Wednesday">We</string>
+    <string name="Thursday">Th</string>
+    <string name="Friday">Fr</string>
+    <string name="Saturday">Sa</string>
+    <string name="Sunday">Su</string>
+    <string name="add_image">Add Image</string>
+    <string name="image_display">Image Display</string>
+    <string name="ReceiptImage">Reciept Image Description</string>
+    <string name="TapToViewFull">Tap to View</string>
+    <string name="tap_to_enlarge">Tap to Enlarge Image</string>
+    <string name="ReceiptLabel">Receipt</string>
+    <string name="NoReceiptAvailable">No receipt image available</string>
+    <string name="ViewFull">View Full Image</string>
+    <string name="NoDescription">No description provided</string>
+    <string name="receipt_image_fullscreen">Receipt Image (Full Screen)</string>
+    <string name="Select_Date_Range">Select Date Range</string>
+    <string name="From">From:</string>
+    <string name="Start_Date">Start Date</string>
+    <string name="End_Date">End Date</string>
+    <string name="To">To:</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Ok">OK</string>
+    <string name="New_Category">CREATE NEW CATEGORY</string>
+    <string name="update_category">Update Category</string>
+    <string name="Budgets">BUDGETS</string>
+    <string name="filters">Filters</string>
+    <string name="Date_range">Date Range</string>
+    <string name="clear_filters">Clear filters</string>
+    <string name="selectable_period">01 Jan 2023 – 31 Dec 2023</string>
+    <string name="Trophy_icon">Trophy icon</string>
+    <string name="Congratulations">Congratulations!</string>
+    <string name="congratulations_message">You\'ve reached your goal!</string>
+    <string name="continues">Continue</string>
+    <string name="edit_category">edit category</string>
+
+    <string-array name="recurrence_options">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Biweekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+</resources>

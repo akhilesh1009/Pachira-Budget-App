@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "235099219086",
+    "project_id": "pachira-34bae",
+    "storage_bucket": "pachira-34bae.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235099219086:android:82e61b6acc82d7d46995df",
+        "android_client_info": {
+          "package_name": "com.pachira.prog7313poepachira"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvQfbEOY9f_hCfThGJqosLeCS8vOknzUw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

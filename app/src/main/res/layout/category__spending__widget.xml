@@ -1,0 +1,362 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/widget_container"
+    style="@style/Widget.Prog7313PoePachira.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.Prog7313PoePachira.AppWidgetContainer"
+    android:background="@drawable/chart_background"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="8dp">
+
+    <!-- Header: Total Cash Flow + Month -->
+    <TextView
+        android:id="@+id/appwidget_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/appwidget_text"
+        android:text="Total Cash Flow - June"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:background="@drawable/header_background"
+        android:padding="8dp" />
+
+    <!-- Financial Summary -->
+    <LinearLayout
+        android:id="@+id/summary_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appwidget_text"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:background="@drawable/summary_background"
+        android:padding="8dp">
+
+        <!-- Net Balance -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Net Balance"
+                android:textSize="12sp"
+                android:textColor="#757575" />
+
+            <TextView
+                android:id="@+id/tv_net_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R0.00"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/purple" />
+        </LinearLayout>
+
+        <!-- Income -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Income"
+                android:textSize="12sp"
+                android:textColor="#757575" />
+
+            <TextView
+                android:id="@+id/tv_income_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R0.00"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#4CAF50" />
+        </LinearLayout>
+
+        <!-- Expenses -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expenses"
+                android:textSize="12sp"
+                android:textColor="#757575" />
+
+            <TextView
+                android:id="@+id/tv_expense_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R0.00"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#F44336" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Chart Container -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/summary_container"
+        android:background="@drawable/chart_background">
+
+        <!-- Chart with fixed aspect ratio -->
+        <ImageView
+            android:id="@+id/widget_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:contentDescription="Monthly income vs expenses chart"
+            android:scaleType="fitCenter"
+            android:padding="8dp" />
+    </FrameLayout>
+
+</RelativeLayout>
+
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:id="@+id/widget_container"-->
+<!--    style="@style/Widget.Prog7313PoePachira.AppWidget.Container"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:theme="@style/Theme.Prog7313PoePachira.AppWidgetContainer"-->
+<!--    android:background="@drawable/chart_background"-->
+<!--    android:clickable="true"-->
+<!--    android:focusable="true"-->
+<!--    android:padding="8dp">-->
+
+<!--    &lt;!&ndash; Month/Year Header &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/appwidget_text"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:contentDescription="@string/appwidget_text"-->
+<!--        android:text="@string/appwidget_text"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:gravity="center"-->
+<!--        android:textColor="#333333"-->
+<!--        android:background="@drawable/header_background"-->
+<!--        android:padding="8dp" />-->
+
+<!--    &lt;!&ndash; Financial Summary &ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/summary_container"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/appwidget_text"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:background="@drawable/summary_background"-->
+<!--        android:padding="8dp">-->
+
+<!--        &lt;!&ndash; Net Balance &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Net"-->
+<!--                android:textSize="10sp"-->
+<!--                android:textColor="#757575" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_net_balance"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="R0.00"-->
+<!--                android:textSize="14sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="@color/purple" />-->
+<!--        </LinearLayout>-->
+
+<!--        &lt;!&ndash; Income &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Income"-->
+<!--                android:textSize="10sp"-->
+<!--                android:textColor="#757575" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_income_total"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="R0.00"-->
+<!--                android:textSize="12sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="#4CAF50" />-->
+<!--        </LinearLayout>-->
+
+<!--        &lt;!&ndash; Expenses &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Expenses"-->
+<!--                android:textSize="10sp"-->
+<!--                android:textColor="#757575" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_expense_total"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="R0.00"-->
+<!--                android:textSize="12sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="#F44336" />-->
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+
+<!--    &lt;!&ndash; Chart Container &ndash;&gt;-->
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@id/summary_container"-->
+<!--        android:background="@drawable/chart_background">-->
+
+<!--        &lt;!&ndash; Chart with fixed aspect ratio &ndash;&gt;-->
+<!--        <ImageView-->
+<!--            android:id="@+id/widget_chart"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:contentDescription="Monthly income vs expenses chart"-->
+<!--            android:scaleType="fitCenter"-->
+<!--            android:padding="8dp" />-->
+<!--    </FrameLayout>-->
+
+<!--</RelativeLayout>-->
+
+<!--    &lt;!&ndash;<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"&ndash;&gt;-->
+<!--&lt;!&ndash;    android:id="@+id/widget_container"&ndash;&gt;-->
+<!--&lt;!&ndash;    style="@style/Widget.Prog7313PoePachira.AppWidget.Container"&ndash;&gt;-->
+<!--&lt;!&ndash;    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;    android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;    android:theme="@style/Theme.Prog7313PoePachira.AppWidgetContainer"&ndash;&gt;-->
+<!--&lt;!&ndash;    android:background="@drawable/category_widget_background"&ndash;&gt;-->
+<!--&lt;!&ndash;    android:clickable="true"&ndash;&gt;-->
+<!--&lt;!&ndash;    android:focusable="true"&ndash;&gt;-->
+<!--&lt;!&ndash;    android:padding="8dp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;    &lt;!&ndash; Month/Year Header &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/appwidget_text"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_alignParentTop="true"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_centerHorizontal="true"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginBottom="8dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:contentDescription="@string/appwidget_text"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:text="@string/appwidget_text"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:textSize="16sp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:textStyle="bold"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:textColor="#333333" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;    &lt;!&ndash; Financial Summary &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/summary_container"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_below="@id/appwidget_text"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginBottom="8dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:orientation="horizontal"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:background="#FFFFFF"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:padding="8dp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;        &lt;!&ndash; Net Balance &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/tv_net_balance"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="Net: R0.00"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="14sp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textStyle="bold"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textColor="@color/purple" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;        &lt;!&ndash; Income &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/tv_income_total"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="Income: R0.00"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="12sp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textStyle="bold"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textColor="#4CAF50" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;        &lt;!&ndash; Expenses &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/tv_expense_total"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="Expenses: R0.00"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="12sp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textStyle="bold"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textColor="#F44336" />&ndash;&gt;-->
+<!--&lt;!&ndash;    </LinearLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    &lt;!&ndash; Chart &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/widget_chart"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_below="@id/summary_container"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:contentDescription="Monthly income vs expenses chart"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:scaleType="fitCenter" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->

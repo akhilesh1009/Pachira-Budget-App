@@ -1,0 +1,4 @@
+1. Fix double notification for completed budget goal. **I think its fixed**
+2. Hide badge description of locked badges. **its fixed**
+3. Set minimum goal amount for budget?
+4. Change "Big Dreamer" badge description **its fixed**

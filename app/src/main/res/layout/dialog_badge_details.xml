@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/white"
+    android:backgroundTint="@color/white">
+
+    <!-- Badge Icon -->
+    <ImageView
+        android:id="@+id/ivBadgeIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_badge_default"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Badge Name -->
+    <TextView
+        android:id="@+id/tvBadgeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Badge Name"
+        android:fontFamily="@font/inter_semibold"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Badge Rarity -->
+    <TextView
+        android:id="@+id/tvBadgeRarity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LEGENDARY"
+        android:fontFamily="@font/inter_semibold"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Badge Description -->
+    <TextView
+        android:id="@+id/tvBadgeDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Badge description goes here"
+        android:fontFamily="@font/inter_semibold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Requirement -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Requirement:"
+        android:textSize="16sp"
+        android:fontFamily="@font/inter_semibold"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/tvBadgeRequirement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complete your first budget goal"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"/>
+
+    <!-- Status -->
+    <TextView
+        android:id="@+id/tvBadgeStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="✅ Earned on 01 Jan 2024"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Close Button -->
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/btn_gradient"
+        android:fontFamily="@font/inter_semibold"
+        android:text="CLOSE"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:cornerRadius="12dp" />
+
+</LinearLayout>

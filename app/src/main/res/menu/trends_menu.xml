@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_export_pdf"
+        android:title="Export PDF"
+        android:icon="@drawable/ic_picture_as_pdf"
+        app:showAsAction="ifRoom"
+        android:contentDescription="Export financial report as PDF" />
+
+</menu>

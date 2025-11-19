@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="24dp"
+    android:background="@color/white"
+    android:backgroundTint="@color/white">
+
+    <!-- Celebration Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🎉 Badge Earned! 🎉"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Badge Icon -->
+    <ImageView
+        android:id="@+id/ivBadgeIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_badge_default"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Badge Name -->
+    <TextView
+        android:id="@+id/tvBadgeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Badge Name"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Badge Description -->
+    <TextView
+        android:id="@+id/tvBadgeDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Badge description goes here"
+        android:textSize="16sp"
+        android:fontFamily="@font/inter_semibold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnViewBadges"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="View All Badges"
+            android:background="@drawable/btn_gradient"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:backgroundTint="@null"
+            app:cornerRadius="12dp" />
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="Close"
+            android:background="@drawable/btn_gradient_red"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:backgroundTint="@null"/>
+
+    </LinearLayout>
+
+</LinearLayout>

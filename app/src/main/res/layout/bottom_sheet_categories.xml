@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bottom_sheet_background">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Budget For"
+            android:textColor="@color/purple"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/btnClose"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="@string/Close"
+            android:src="@drawable/ic_close"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            app:tint="@color/purple" />
+
+    </LinearLayout>
+
+    <!-- Categories List -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="400dp"
+        android:paddingHorizontal="20dp"
+        android:paddingBottom="20dp">
+
+    <RadioGroup
+        android:id="@+id/radioGroupCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:maxHeight="200dp"
+        android:paddingHorizontal="4dp"
+        android:paddingBottom="20dp">
+
+        <!-- Select All Option -->
+        <LinearLayout
+            android:id="@+id/layoutSelectAll"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginBottom="8dp"
+            android:paddingHorizontal="4dp"
+            tools:ignore="UselessParent">
+
+            <!-- Empty space to align with icon - reduced size -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Select All"
+                android:textSize="16sp"
+                android:textColor="@color/text_primary"
+                android:gravity="start|center_vertical"
+                android:layout_marginStart="34dp" />
+
+            <!-- Radio Button pushed far to the right -->
+            <RadioButton
+                android:id="@+id/rbSelectAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_radio_button"
+                android:background="@null"
+                android:buttonTint="@null"
+                android:buttonTintMode="multiply"
+                android:theme="@null"
+                android:clickable="false"
+                android:focusable="false"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="2dp" />
+
+        </LinearLayout>
+
+        <!-- Categories will be added programmatically here -->
+
+    </RadioGroup>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="shadowGrey">#999999</color>
+    <color name="outline_color">#FF6200EE</color>
+    <color name="vibrant_blue">#0E33F3</color>
+    <color name="electric_purple">#5E23FF</color>
+    <color name="light_gray_30">#4CD9D9D9</color>
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#388E3C</color>
+    <color name="colorAccent">#FF9800</color>
+    <color name="colorBackground">#F5F5F5</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="colorIncome">#4CAF50</color>
+    <color name="colorExpense">#F44336</color>
+    <color name="colorProgressBackground">#E0E0E0</color>
+    <color name="colorTabBackground">#E0E0E0</color>
+    <color name="colorImagePreviewBackground">#FAFAFA</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="light_gray">#F5F5F5</color>
+    <color name="darker_gray">#c4c4c4</color>
+    <color name="primary_color">#3F51B5</color>
+    <color name="divider_color">#E0E0E0</color>
+    <color name="background_color">#FFFFFF</color>
+    <!-- Added colors for text -->
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#757575</color>
+
+    <!-- Primary Colors -->
+    <color name="purple">#6200EE</color>
+    <color name="purple_dark">#3700B3</color>
+    <color name="purple_light">#BB86FC</color>
+
+    <!-- Secondary Colors -->
+    <color name="teal">#03DAC5</color>
+    <color name="teal_dark">#018786</color>
+
+    <!-- Financial Colors -->
+    <color name="income_green">#4CAF50</color>
+    <color name="expense_red">#F44336</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#9E9E9E</color>
+
+    <!-- Background Colors -->
+    <color name="background_light">#FAFAFA</color>
+    <color name="background_card">#FFFFFF</color>
+    <color name="background_surface">#F5F5F5</color>
+
+    <!-- Wallet Colors -->
+    <color name="wallet_purple">#6200EE</color>
+    <color name="wallet_blue">#2196F3</color>
+    <color name="wallet_green">#4CAF50</color>
+    <color name="wallet_orange">#FF9800</color>
+    <color name="wallet_red">#F44336</color>
+    <color name="wallet_teal">#009688</color>
+    <color name="wallet_indigo">#3F51B5</color>
+    <color name="wallet_pink">#E91E63</color>
+
+    <!-- Status Colors -->
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FF9800</color>
+    <color name="error">#F44336</color>
+    <color name="info">#2196F3</color>
+
+    <!-- Neutral Colors -->
+    <color name="gray_light">#F5F5F5</color>
+    <color name="gray_medium">#E0E0E0</color>
+    <color name="gray_dark">#757575</color>
+
+    <!-- Navigation Colors -->
+    <color name="nav_selected">#6200EE</color>
+    <color name="nav_unselected">#9E9E9E</color>
+
+    <!-- Card Colors -->
+    <color name="card_background">#FFFFFF</color>
+    <color name="card_shadow">#1A000000</color>
+
+    <!-- Overlay Colors -->
+    <color name="overlay_dark">#80000000</color>
+    <color name="overlay_light">#80FFFFFF</color>
+
+
+    <!-- Category Colors -->
+    <color name="category_bills">#00B894</color>
+    <color name="category_healthcare">#E17055</color>
+    <color name="category_car">#0984E3</color>
+    <color name="category_transport">#FF9800</color>
+    <color name="category_education">#6C5CE7</color>
+    <color name="category_home">#A29BFE</color>
+    <color name="category_travel">#74B9FF</color>
+    <color name="category_entertainment">#FD79A8</color>
+    <color name="category_groceries">#FDCB6E</color>
+    <color name="category_food">#4CAF50</color>
+    <color name="category_salary">#36D1DC</color>
+    <color name="category_gift">#FFDD00</color>
+    <color name="category_investment">#FF5733</color>
+    <color name="category_shopping">#2196F3</color>
+
+    <!-- Badge Rarity Colors -->
+    <color name="badge_common">#9E9E9E</color>
+    <color name="badge_rare">#2196F3</color>
+    <color name="badge_epic">#9C27B0</color>
+    <color name="badge_legendary">#FFD700</color>
+
+    <!-- Category colors -->
+    <color name="category_red">#F44336</color>
+    <color name="category_pink">#E91E63</color>
+    <color name="category_purple">#9C27B0</color>
+    <color name="category_deep_purple">#673AB7</color>
+    <color name="category_indigo">#3F51B5</color>
+    <color name="category_blue">#2196F3</color>
+    <color name="category_light_blue">#03A9F4</color>
+    <color name="category_cyan">#00BCD4</color>
+    <color name="category_teal">#009688</color>
+    <color name="category_green">#4CAF50</color>
+    <color name="category_light_green">#8BC34A</color>
+    <color name="category_lime">#CDDC39</color>
+    <color name="category_yellow">#FFEB3B</color>
+    <color name="category_amber">#FFC107</color>
+    <color name="category_orange">#FF9800</color>
+    <color name="category_deep_orange">#FF5722</color>
+    <color name="category_brown">#795548</color>
+    <color name="category_grey">#9E9E9E</color>
+    <color name="light_blue_50">#FFE1F5FE</color>
+    <color name="light_blue_200">#FF81D4FA</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+</resources>
